@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Parent" icon-name="standard:person_account">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <span>
+                    {statusone}
+                    <c-child-event childno="Child One" onnotify={handleOnSelected}></c-child-event>
+                </span>
+            </div>
+            <div class="slds-col">
+                <span>
+                    {statustwo}
+                    <c-child-event childno="Child Two" onnotify={handleOnSelected}></c-child-event>
+                </span>
+            </div>
+            <div class="slds-col">
+                <span>
+                    {statusthree}
+                    <c-child-event childno="Child Three" onnotify={handleOnSelected}></c-child-event>
+                </span>
+            </div>
+        </div>
+    </lightning-card>
+</template>
